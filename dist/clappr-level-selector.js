@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@clappr/core')) :
-  typeof define === 'function' && define.amd ? define(['@clappr/core'], factory) :
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('clappr')) :
+  typeof define === 'function' && define.amd ? define(['clappr'], factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.LevelSelector = factory(global.Clappr));
-}(this, (function (core) { 'use strict';
+}(this, (function (clappr) { 'use strict';
 
   function _classCallCheck(instance, Constructor) {
     if (!(instance instanceof Constructor)) {
@@ -158,7 +158,7 @@
     }, {
       key: "template",
       get: function get() {
-        return core.template(pluginHtml);
+        return clappr.template(pluginHtml);
       }
     }, {
       key: "attributes",
@@ -189,19 +189,19 @@
     }, {
       key: "bindEvents",
       value: function bindEvents() {
-        this.listenTo(this.core, core.Events.CORE_READY, this.bindPlaybackEvents);
-        if (core.Events.CORE_ACTIVE_CONTAINER_CHANGED) this.listenTo(this.core, core.Events.CORE_ACTIVE_CONTAINER_CHANGED, this.reload);else this.listenTo(this.core.mediaControl, core.Events.MEDIACONTROL_CONTAINERCHANGED, this.reload);
-        this.listenTo(this.core.mediaControl, core.Events.MEDIACONTROL_RENDERED, this.render);
-        this.listenTo(this.core.mediaControl, core.Events.MEDIACONTROL_HIDE, this.hideSelectLevelMenu);
+        this.listenTo(this.core, clappr.Events.CORE_READY, this.bindPlaybackEvents);
+        if (clappr.Events.CORE_ACTIVE_CONTAINER_CHANGED) this.listenTo(this.core, clappr.Events.CORE_ACTIVE_CONTAINER_CHANGED, this.reload);else this.listenTo(this.core.mediaControl, clappr.Events.MEDIACONTROL_CONTAINERCHANGED, this.reload);
+        this.listenTo(this.core.mediaControl, clappr.Events.MEDIACONTROL_RENDERED, this.render);
+        this.listenTo(this.core.mediaControl, clappr.Events.MEDIACONTROL_HIDE, this.hideSelectLevelMenu);
       }
     }, {
       key: "bindPlaybackEvents",
       value: function bindPlaybackEvents() {
         if (!this.playback) return;
-        this.listenTo(this.playback, core.Events.PLAYBACK_LEVELS_AVAILABLE, this.fillLevels);
-        this.listenTo(this.playback, core.Events.PLAYBACK_LEVEL_SWITCH_START, this.startLevelSwitch);
-        this.listenTo(this.playback, core.Events.PLAYBACK_LEVEL_SWITCH_END, this.stopLevelSwitch);
-        this.listenTo(this.playback, core.Events.PLAYBACK_BITRATE, this.updateCurrentLevel);
+        this.listenTo(this.playback, clappr.Events.PLAYBACK_LEVELS_AVAILABLE, this.fillLevels);
+        this.listenTo(this.playback, clappr.Events.PLAYBACK_LEVEL_SWITCH_START, this.startLevelSwitch);
+        this.listenTo(this.playback, clappr.Events.PLAYBACK_LEVEL_SWITCH_END, this.stopLevelSwitch);
+        this.listenTo(this.playback, clappr.Events.PLAYBACK_BITRATE, this.updateCurrentLevel);
         var playbackLevelsAvailableWasTriggered = this.playback.levels && this.playback.levels.length > 0;
         playbackLevelsAvailableWasTriggered && this.fillLevels(this.playback.levels);
       }
@@ -226,7 +226,7 @@
       key: "render",
       value: function render() {
         if (this.shouldRender()) {
-          var style = core.Styler.getStyleFor(css_248z, {
+          var style = clappr.Styler.getStyleFor(css_248z, {
             baseUrl: this.core.options.baseUrl
           });
           this.$el.html(this.template({
@@ -362,7 +362,7 @@
     }]);
 
     return LevelSelector;
-  }(core.UICorePlugin);
+  }(clappr.UICorePlugin);
 
   return LevelSelector;
 
