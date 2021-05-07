@@ -2031,11 +2031,6 @@ cjs-module-lexer@^0.6.0:
   resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-0.6.0.tgz#4186fcca0eae175970aee870b9fe2d6cf8d5655f"
   integrity sha512-uc2Vix1frTfnuzxxu1Hp4ktSvM3QaI4oXl4ZUqL1wjTu/BGki9TrCWoqLTg/drR1KwAEarXuRFCG2Svr1GxPFw==
 
-clappr@^0.3.13:
-  version "0.3.13"
-  resolved "https://registry.yarnpkg.com/clappr/-/clappr-0.3.13.tgz#e2eacc37cb85024b7f73c0e0fcb4de52d0f15d7f"
-  integrity sha512-cAtGhtSAYIavKqVQb/wX5pB9twb/W7gFUGBaGHy6dbpUqCtCmtH0Eu05rNSwtbaREWgSTUJyEMTgaNSZ/62KlQ==
-
 class-utils@^0.3.5:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/class-utils/-/class-utils-0.3.6.tgz#f93369ae8b9a7ce02fd41faad0ca83033190c463"
