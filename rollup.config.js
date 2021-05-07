@@ -47,7 +47,7 @@ const mainBundle = {
 
 const esmBundle = {
   input: 'src/main.js',
-  external: ['clappr', /@babel\/runtime/],
+  external: ['@clappr/core', /@babel\/runtime/],
   output: {
     name: 'LevelSelector',
     file: pkg.module,
