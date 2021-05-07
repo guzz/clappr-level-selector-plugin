@@ -1,9 +1,12 @@
 {
-  "name": "level-selector",
+  "name": "@guzzj/level-selector",
   "description": "A simple plugin for Clappr that adds support to manually select level on multi-bitrate streams.",
   "version": "0.2.0",
   "license": "MIT",
-  "repository": "clappr/clappr-level-selector-plugin",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:guzz/clappr-level-selector-plugin.git"
+  },
   "author": {
     "name": "Lucas Mundim",
     "email": "lucas.mundim@gmail.com",
