@@ -1,4 +1,4 @@
-import { Events, Styler, UICorePlugin, template } from 'clappr'
+import { Events, Styler, UICorePlugin, template } from '@clappr/core'
 import pluginHtml from './public/level-selector.html'
 import pluginStyle from './public/style.scss'
 
@@ -62,10 +62,8 @@ export default class LevelSelector extends UICorePlugin {
   reload() {
     this.stopListening()
     // Ensure it stop listening before rebind events (avoid duplicate events)
-    process.nextTick(() => {
-      this.bindEvents()
-      this.bindPlaybackEvents()
-    })
+    this.bindEvents()
+    this.bindPlaybackEvents()
   }
 
   shouldRender() {
