@@ -26,19 +26,19 @@ const plugins = [
 
 const mainBundle = {
   input: 'src/main.js',
-  external: ['@clappr/core'],
+  external: ['clappr'],
   output: [
     {
       name: 'LevelSelector',
       file: pkg.main,
       format: 'umd',
-      globals: { '@clappr/core': 'Clappr' },
+      globals: { 'clappr': 'Clappr' },
     },
     !!process.env.MINIMIZE && {
       name: 'LevelSelector',
       file: 'dist/clappr-level-selector.min.js',
       format: 'umd',
-      globals: { '@clappr/core': 'Clappr' },
+      globals: { 'clappr': 'Clappr' },
       plugins: terser(),
     },
   ],
@@ -47,12 +47,12 @@ const mainBundle = {
 
 const esmBundle = {
   input: 'src/main.js',
-  external: ['@clappr/core', /@babel\/runtime/],
+  external: ['clappr', /@babel\/runtime/],
   output: {
     name: 'LevelSelector',
     file: pkg.module,
     format: 'esm',
-    globals: { '@clappr/core': 'Clappr' },
+    globals: { 'clappr': 'Clappr' },
   },
   plugins: [
     babelPluginForESMBundle({
