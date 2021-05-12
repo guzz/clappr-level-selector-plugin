@@ -1,5 +1,5 @@
 {
-  "name": "@guzzj/level-selector",
+  "name": "@guzzj/clappr-level-selector-plugin",
   "description": "A simple plugin for Clappr that adds support to manually select level on multi-bitrate streams.",
   "version": "0.2.2",
   "license": "MIT",
@@ -50,7 +50,7 @@
     "@rollup/plugin-commonjs": "^18.0.0",
     "@rollup/plugin-node-resolve": "^11.2.1",
     "babel-jest": "^26.6.3",
-    "@guzzj/clappr-core": "^0.4.18",
+    "@guzzj/clappr-core": "^0.4.19",
     "coveralls": "^3.1.0",
     "eslint": "^7.24.0",
     "html-loader": "^2.1.2",
@@ -68,7 +68,7 @@
     "sass": "^1.32.12"
   },
   "peerDependencies": {
-    "@guzzj/clappr-core": "^0.4.18"
+    "@guzzj/clappr-core": "^0.4.19"
   },
   "engines": {
     "node": ">=12.0.0"

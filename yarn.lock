@@ -905,11 +905,6 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@clappr/core@^0.4.18":
-  version "0.4.18"
-  resolved "https://registry.yarnpkg.com/@clappr/core/-/core-0.4.18.tgz#7becc6c32f2a48a097d1ca158dbda0169f7979ce"
-  integrity sha512-MMZ6j2+pbtoo/dPi9nyo/dAfW3u0D3np7mpT0VHNNjy+K8qZZAlyF2kYNHjwqyj6pRY0kRWj4KMXA5SUMR7Zyg==
-
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"
@@ -932,6 +927,11 @@
     js-yaml "^3.13.1"
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
+
+"@guzzj/clappr-core@^0.4.19":
+  version "0.4.19"
+  resolved "https://registry.yarnpkg.com/@guzzj/clappr-core/-/clappr-core-0.4.19.tgz#30c3bbf8530cc4e806f4231d258fe4ffaeecfbc5"
+  integrity sha512-xD6E4lflQ4S4n4p2pMJsoM0CKsIjVwyejf6wl1y+OQzKaADpJ+esZ1Psbq2BMlMXpwaHHiOwEfHOPjy+OiHTWw==
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
