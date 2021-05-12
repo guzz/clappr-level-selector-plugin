@@ -1,4 +1,4 @@
-import { Events, Styler, UICorePlugin, template } from '@clappr/core'
+import { Events, Styler, UICorePlugin, template } from '@guzzj/clappr-core'
 import pluginHtml from './public/level-selector.html'
 import pluginStyle from './public/style.scss'
 
