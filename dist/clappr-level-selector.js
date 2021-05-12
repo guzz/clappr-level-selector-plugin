@@ -151,6 +151,13 @@
     }
 
     _createClass(LevelSelector, [{
+      key: "supportedVersion",
+      get: function get() {
+        return {
+          min: clapprCore.version
+        };
+      }
+    }, {
       key: "name",
       get: function get() {
         return 'level_selector';
@@ -353,11 +360,6 @@
         this.levelElement().removeClass('current');
         this.currentLevel && this.levelElement(this.currentLevel.id).addClass('current');
         this.updateText(this.selectedLevelId);
-      }
-    }], [{
-      key: "version",
-      get: function get() {
-        return VERSION;
       }
     }]);
 
